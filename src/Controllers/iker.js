@@ -20,13 +20,13 @@ export default class ikerController {
     ** scene: {width: 800, height: 600, floor: int (the floor height)}
     ** dt: milliseconds elapsed since last update
     */
-    if (birdData.y > scene.height - scene.floor - 10) {
+    if (birdData.y > scene.height - scene.floor - 50) {
       this.jump(1);
 
     }
     if (pipes.length > 0) {
       const pipe = pipes[0];
-        if (birdData.x > pipe.x - 170 && birdData.x < pipe.x + 50) {
+        if (birdData.x > pipe.x - 170 && birdData.x < pipe.x + 75) {
           if (pipe.isTop === false) {
             if (birdData.y > pipe.pipeHeight + 10) {
               this.jump(1);
