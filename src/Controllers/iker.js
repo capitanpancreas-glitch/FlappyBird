@@ -38,4 +38,4 @@ export default class ikerController {
   }
 }
 
-export const color = 0xff00ff;
+export const color =  0x0000FF;
