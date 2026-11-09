@@ -26,7 +26,7 @@ export default class ikerController {
     }
     if (pipes.length > 0) {
       const pipe = pipes[0];
-        if (birdData.x > pipe.x - 170 && birdData.x < pipe.x + 75) {
+        if (birdData.x > pipe.x - 170 && birdData.x < pipe.x + 85) {
           if (pipe.isTop === false) {
             if (birdData.y > pipe.pipeHeight + 10) {
               this.jump(1);
